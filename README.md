@@ -1,4 +1,4 @@
-UiAutomator_Automation
+Automated UiAutomation
 ============
 
 This project contains two scripts, though you'll only ever have to use the Python script.
