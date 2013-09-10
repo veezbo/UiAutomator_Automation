@@ -7,7 +7,9 @@ Basically, it automates the entirety of the UiAutomator pipeline, from creating 
 
 Furthermore, you can run as many UiAutomator projects at once as you wish.
 
-Usage (though also provided in the program):
+Usage
+-----------
+Also Provided in the Program
 
     python UiAutomator.py -n PROJECT_NAMES -p PROJECT_PATHS -c PACKAGE_NAMES
 
