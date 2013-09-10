@@ -20,6 +20,7 @@ Optional Arguments:
 
 Examples Uses:
 	bash uiautomator.sh -n Create_Contacts -p /home/vibhor/workspace/Create_Contacts -c contacts.create_contacts
+	bash uiautomator.sh -n Create_Contacts Contacts_Verification -p /home/vibhor/workspace/Create_Contacts /home/vibhor/workspaceContacts_Verification/ -c contacts.create_contacts contacts.verify_contacts
 	"
 }
 
@@ -136,7 +137,6 @@ shift $(( OPTIND - 1 ))
 
 
 #Basic checks to ensure our required arguments have been given
-
 if [[ "$name" == "" ]]; then
 	error "Please Enter the name of your project"
 	exit 1
