@@ -3,7 +3,8 @@ UiAutomator_Automation
 
 This project contains two scripts, though you'll only ever have to use the Python script.
 
-Basically, it automates the entirety of the UiAutomator pipeline, from creating the test with the android command, to building it, to pushing it to the device, and finally to running it.  
+Basically, it automates the entirety of the UiAutomator pipeline, from creating the test with the android command, to building it, to pushing it to the device, and finally to running it.
+
 Furthermore, you can run as many UiAutomator projects at once as you wish.
 
 Usage (though also provided in the program):
