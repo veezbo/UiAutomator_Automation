@@ -19,8 +19,8 @@ Optional Arguments:
 	-r supress the running of test (by default, runs)
 
 Examples Uses:
-	bash uiautomator.sh -n Create_Contacts -p /home/vibhor/workspace/Create_Contacts -c contacts.create_contacts
-	bash uiautomator.sh -n Create_Contacts Contacts_Verification -p /home/vibhor/workspace/Create_Contacts /home/vibhor/workspaceContacts_Verification/ -c contacts.create_contacts contacts.verify_contacts
+	bash uiautomator.sh -n Create_Contacts -p /home/vibhor/workspace/Create_Contacts/ -c contacts.create_contacts
+	bash uiautomator.sh -n Create_Contacts Contacts_Verification -p /home/vibhor/workspace/Create_Contacts /home/vibhor/workspace/Contacts_Verification/ -c contacts.create_contacts contacts.verify_contacts
 	"
 }
 
