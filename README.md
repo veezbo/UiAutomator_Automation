@@ -9,8 +9,13 @@ Furthermore, you can run as many UiAutomator projects at once as you wish.
 
 Usage
 -----------
-Also Provided in the Program
 
     python UiAutomator.py -p <PROJECT_PATHS> -c <PACKAGE_NAMES>
 
 (Don't ask about the -c argument; it's Android's convention)
+
+----
+
+Or for the linux executable (must have python2 installed):
+
+    ./UiAutomator -p <PROJECT_PATHS> -c <PACKAGE_NAMES>
