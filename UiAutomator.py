@@ -3,7 +3,7 @@ from argparse import RawTextHelpFormatter
 
 
 #Read in Arguments
-parser = argparse.ArgumentParser(description="Description: \n\tBuild and run one or multiple UiAutomator projects at once", epilog="********Example Usages*********\n\npython UiAutomator.py -n Create_Contacts -p /home/vibhor/workspace/Create_Contacts/ -c contacts.create_contacts\n\npython UiAutomator.py -n Create_Contacts Contacts_Verification -p /home/vibhor/workspace/Create_Contacts/ /home/vibhor/workspace/Contacts_Verification/ -c contacts.create_contacts contacts_verification", formatter_class=RawTextHelpFormatter)
+parser = argparse.ArgumentParser(description="Description: \n\tBuild and run one or multiple UiAutomator projects at once", epilog="********Example Usages*********\n\npython UiAutomator.py -p /home/vibhor/workspace/Create_Contacts/ -c contacts.create_contacts\n\npython UiAutomator.py -p /home/vibhor/workspace/Create_Contacts/ /home/vibhor/workspace/Contacts_Verification/ -c contacts.create_contacts contacts_verification", formatter_class=RawTextHelpFormatter)
 parser._optionals.title = "Flag Arguments"
 #parser.add_argument("-n", help="REQUIRED: project names", metavar="project_names", required=True, nargs="+")
 parser.add_argument("-p", help="REQUIRED: full path to projects", metavar="project_paths", required=True, nargs="+")
@@ -31,7 +31,7 @@ if len(args.p) != len(args.c):
 	sys.exit(1)
 
 
-#Get Name from Project
+#Get Name from Project method
 def getName(p):
 	return p.split('/')[-2]
 

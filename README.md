@@ -11,6 +11,6 @@ Usage
 -----------
 Also Provided in the Program
 
-    python UiAutomator.py -n PROJECT_NAMES -p PROJECT_PATHS -c PACKAGE_NAMES
+    python UiAutomator.py -p <PROJECT_PATHS> -c <PACKAGE_NAMES>
 
 (Don't ask about the -c argument; it's Android's convention)
