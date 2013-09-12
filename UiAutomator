@@ -33,11 +33,18 @@ if len(args.p) != len(args.c):
 	sys.exit(1)
 
 
-#Get Name from Project method
+#Ensure package names end with a '/'
+def endSlash(p):
+	if p[-1] == '/':
+		return p
+	else:
+		return p+'/'
+args.p = map(endSlash, args.p)
+
+
+#Get Name from project paths
 def getName(p):
 	return p.split('/')[-2]
-
-#Get the names of the projects
 n = map(getName, args.p)
 
 
